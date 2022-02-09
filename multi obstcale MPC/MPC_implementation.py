@@ -221,7 +221,7 @@ if __name__ == '__main__':
         # t[mpciter + 1] = t0
         cat_controls = np.vstack((cat_controls, np.array((u[:, 0]).full())))
         t = np.vstack((t, t0))
-        #didnt fully understand this part yet
+        #getting the solution from the solver for states and control
         # Apply the control and shift the solution
         t0, x0, u0 = shift(h, t0, x0, u, f)
         # shifting to the new values for next iteration
